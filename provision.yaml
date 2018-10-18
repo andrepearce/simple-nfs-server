@@ -1,0 +1,7 @@
+#!/usr/bin/env ansible-playbook
+---
+- name: Provision an NFS server
+  hosts: all
+
+  roles:
+    - packages

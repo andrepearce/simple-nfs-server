@@ -1,0 +1,8 @@
+# Ansible Inventory
+#
+# Specified here so we are not dependent on having it exist in /etc/ansible/hosts.
+---
+all:
+  hosts:
+    localhost:
+      ansible_connection: local
