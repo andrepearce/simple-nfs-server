@@ -1,4 +1,0 @@
-- name: Install Packages
-  package:
-    name: "{{ packages }}"
-    state: present

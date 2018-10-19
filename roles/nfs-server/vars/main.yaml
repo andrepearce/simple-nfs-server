@@ -1,0 +1,11 @@
+# List of required packages
+packages:
+  - nfs-utils
+  - rpcbind
+
+# List of services to be enabled and started
+services:
+  - rpcbind
+  - nfs-server
+  - nfs-lock
+  - nfs-idmap

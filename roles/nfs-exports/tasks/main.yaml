@@ -1,0 +1,12 @@
+- name: Template Exports File
+  template:
+    src: exports.j2
+    dest: /etc/exports
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Restart NFS Server
+  systemd:
+    name: nfs-server
+    state: restarted

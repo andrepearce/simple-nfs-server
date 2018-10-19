@@ -1,0 +1,16 @@
+# List of required packages
+packages:
+  - firewalld
+
+# List of services to be enabled and started
+services:
+  - firewalld
+
+# List of services to be allowed through the firewall
+rules:
+  - service: nfs
+    zone: public
+  - service: mountd
+    zone: public
+  - service: rpc-bind
+    zone: public

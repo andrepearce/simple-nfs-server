@@ -1,0 +1,15 @@
+# List of directories to export via NFS.
+#
+# The list should confine to the following structure:
+# nfs_exports:
+#   - direectory: Required (The directory to export)
+#     options: Optional (Valid options specified at https://linux.die.net/man/5/exports)
+#       - ...
+#   - ...
+#
+# NOTE: This assumes the directories already exist and have been given the correct permissions.
+
+nfs_exports:
+  - directory: /var/nfsshare
+    options:
+      - blah #TODO
