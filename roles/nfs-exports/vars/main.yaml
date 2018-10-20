@@ -1,0 +1,42 @@
+# List of directories to export via NFS.
+#
+# The list should confine to the following structure:
+# nfs_exports:
+#   - directory: (The directory to export)
+#     clients: (List of clients for the export)
+#       - address: (The address of the client)
+#         options: (Valid options specified at https://linux.die.net/man/5/exports)
+#           - ...
+#       - ...
+#   - ...
+#
+# NOTE: This assumes the directories already exist and have been given the correct permissions.
+
+nfs_exports:
+  - directory: /etc/nfsshare
+    clients:
+      - address: 192.168.0.0/24
+        options:
+          - rw
+          - sync
+          - no_root_squash
+      - address: 192.168.0.1
+        options:
+          - rw
+  - directory: /etc/nfsshare2
+    clients:
+      - address: 192.168.0.0/24
+        options:
+          - rw
+          - sync
+  - directory: /etc/nfsshare3
+    clients:
+      - address: 192.168.0.0/24
+        options:
+          - rw
+          - sync
+      - address: 192.168.0.2
+        options:
+          - rw
+          - sync
+          - no_root_squash

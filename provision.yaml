@@ -7,7 +7,7 @@
   roles:
     # Install and Setup the NFS Server
     - nfs-server
-    # Export the specified directories TODO look is we need to extend this role to include the var file
-    # - nfs-exports
+    # Export the specified directories
+    - nfs-exports
     # Setup firewall and allow only necessary services through
     - firewall
