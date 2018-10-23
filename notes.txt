@@ -1,6 +1,0 @@
-https://www.tecmint.com/how-to-setup-nfs-server-in-linux/
-https://www.howtoforge.com/nfs-server-and-client-on-centos-7
-https://unix.stackexchange.com/questions/252812/user-permissions-in-nfs-mounted-directory#252815
-https://forums.macrumors.com/threads/nfs-operation-not-permitted.317044/
-
-vars directory to contain the exports
