@@ -13,7 +13,7 @@ The playbook by default will provision the NFS server on the host configured in 
 
 1. `cd` to the root directory of this repository.
 2. Edit [inventory.yaml](./inventory.yaml) with your approriate host details.
-3. Edit `roles/nfs-exports/vars/main.yaml` to export the directories you require.
+3. Edit [roles/nfs-exports/vars/main.yaml](./roles/nfs-exports/vars/main.yaml) to export the directories you require.
 4. Execute `./provision.yaml -K`.
 5. Enter your sudo password.
 
