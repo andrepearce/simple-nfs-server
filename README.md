@@ -1,6 +1,6 @@
 # simple-nfs-server
 
-This repository contains anisble roles and a playbook that will provision a basic NFS server to localhost, with a firewall in front.
+This repository contains anisble roles and a playbook that will provision a basic NFS server, with a firewall in front.
 
 ## Pre-requisites
 
@@ -9,12 +9,13 @@ This repository contains anisble roles and a playbook that will provision a basi
 
 ## Provisioning
 
-The playbook by default will provision the NFS server on the localhost. The below steps are an example of how you can use this playbook to provision the NFS server:
+The playbook by default will provision the NFS server on the host configured in [inventory.yaml](./inventory.yaml). You should edit the [inventory.yaml](./inventory.yaml) file to point to your relevant host. The below steps are an example of how you can use this playbook to provision the NFS server:
 
 1. `cd` to the root directory of this repository.
-2. Edit `roles/nfs-exports/vars/main.yaml` to export the directories you require.
-3. Execute `./provision.yaml -K`.
-4. Enter your sudo password.
+2. Edit [inventory.yaml](./inventory.yaml) with your approriate host details.
+3. Edit `roles/nfs-exports/vars/main.yaml` to export the directories you require.
+4. Execute `./provision.yaml -K`.
+5. Enter your sudo password.
 
 ## Additional Resources
 
