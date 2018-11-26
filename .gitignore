@@ -12,3 +12,7 @@ Thumbs.db
 #########################################
 __pycache__/
 *.py[cod]
+
+# Ignore SSH Key Directory #
+############################
+ssh-keys

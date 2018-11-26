@@ -4,5 +4,8 @@
 ---
 all:
   hosts:
-    localhost:
-      ansible_connection: local
+    nfs_server:
+      ansible_host: 172.16.82.213
+      ansible_connection: ssh
+      ansible_user: root
+      ansible_ssh_private_key_file: ssh-keys/nfs-server

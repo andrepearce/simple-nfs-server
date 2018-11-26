@@ -13,30 +13,10 @@
 # NOTE: This assumes the directories already exist and have been given the correct permissions.
 
 nfs_exports:
-  - directory: /etc/nfsshare
+  - directory: /opt/nfsshare
     clients:
-      - address: 192.168.0.0/24
+      - address: 192.168.1.0/24
         options:
           - rw
           - sync
-          - no_root_squash
-      - address: 192.168.0.1
-        options:
-          - rw
-  - directory: /etc/nfsshare2
-    clients:
-      - address: 192.168.0.0/24
-        options:
-          - rw
-          - sync
-  - directory: /etc/nfsshare3
-    clients:
-      - address: 192.168.0.0/24
-        options:
-          - rw
-          - sync
-      - address: 192.168.0.2
-        options:
-          - rw
-          - sync
-          - no_root_squash
+          - all_squash
